@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="43282" started-at="2022-02-11T09:46:57Z" finished-at="2022-02-11T09:47:40Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.assignment2.userreg.stepdefinations.RegisterRunner@46fa7c39]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="CommonTestBase.scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.assignment2.userreg.stepdefinations.RegisterRunner@46fa7c39]" name="scenario" class="com.assignment2.commonUtils.CommonTestBase"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="43282" started-at="2022-02-11T09:46:57Z" finished-at="2022-02-11T09:47:40Z">
+      <class name="com.assignment2.userreg.stepdefinations.RegisterRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.assignment2.userreg.stepdefinations.RegisterRunner@46fa7c39]" name="setUpClass" is-config="true" duration-ms="113" started-at="2022-02-11T09:46:57Z" finished-at="2022-02-11T09:46:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.assignment2.userreg.stepdefinations.RegisterRunner@46fa7c39]" name="scenario" duration-ms="23826" started-at="2022-02-11T09:46:57Z" description="Runs Cucumber scenarios" data-provider="scenario" finished-at="2022-02-11T09:47:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Register a new user to portal"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.assignment2.userreg.stepdefinations.RegisterRunner@46fa7c39]" name="scenario" duration-ms="19375" started-at="2022-02-11T09:47:21Z" description="Runs Cucumber scenarios" data-provider="scenario" finished-at="2022-02-11T09:47:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Register a new user to portal"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.assignment2.userreg.stepdefinations.RegisterRunner@46fa7c39]" name="tearDownClass" is-config="true" duration-ms="26" started-at="2022-02-11T09:47:40Z" finished-at="2022-02-11T09:47:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.assignment2.userreg.stepdefinations.RegisterRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

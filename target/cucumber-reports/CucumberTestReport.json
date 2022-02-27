@@ -1,0 +1,1405 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 40,
+        "name": "Register a new user to portal",
+        "description": "",
+        "id": "user-registration;register-a-new-user-to-portal;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1374728137,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Navigate to Homepage",
+            "match": {
+              "location": "RegisterRunner.navigateToHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@class\u003d\u0027login\u0027]\"}\n  (Session info: chrome\u003d98.0.4758.80)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027it002055\u0027, ip: \u0027192.168.18.9\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.10.0-1057-oem\u0027, java.version: \u00271.8.0_321\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.dPd6cf}, goog:chromeOptions: {debuggerAddress: localhost:39073}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2d64b46060e6063f81ae67c44daeac41\n*** Element info: {Using\u003dxpath, value\u003d//a[@class\u003d\u0027login\u0027]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\n\tat com.assignment2.userreg.pageobjects.Homepage.clickLogin(Homepage.java:14)\n\tat com.assignment2.userreg.stepdefinations.RegisterRunner.loginbtn(RegisterRunner.java:42)\n\tat ✽.Click on Login(file:src/test/resources/FeatureFiles/RegisterUserVerifyError.feature:15)\n",
+              "duration": 49806580,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "Click on Login",
+            "match": {
+              "location": "RegisterRunner.loginbtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7789,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Enter email as \"bn4st@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "bn4st@gmail.com",
+                  "offset": 16
+                }
+              ],
+              "location": "RegisterRunner.enterEmail(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2596,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "Click on Submit Create",
+            "match": {
+              "location": "RegisterRunner.clickSubmitCreate()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2477,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "Select gender as \"male\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "male",
+                  "offset": 18
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2359,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "Enter \"customer_first_name\" as \"Aryan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "customer_first_name",
+                  "offset": 7
+                },
+                {
+                  "val": "Aryan",
+                  "offset": 32
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2315,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "Enter \"customer_last_name\" as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "customer_last_name",
+                  "offset": 7
+                },
+                {
+                  "val": "",
+                  "offset": 31
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2302,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "Enter \"password\" as \"ggysb2n\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 7
+                },
+                {
+                  "val": "ggysb2n",
+                  "offset": 21
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2358,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "Enter \"day\" as \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "day",
+                  "offset": 7
+                },
+                {
+                  "val": "1",
+                  "offset": 16
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2315,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "Enter \"month\" as \"May\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "month",
+                  "offset": 7
+                },
+                {
+                  "val": "May",
+                  "offset": 18
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2366,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "Enter \"year\" as \"2000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "year",
+                  "offset": 7
+                },
+                {
+                  "val": "2000",
+                  "offset": 17
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2335,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "Enter \"firstname\" as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "firstname",
+                  "offset": 7
+                },
+                {
+                  "val": "",
+                  "offset": 22
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2223,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "Enter \"lastname\" as \"Sharma\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lastname",
+                  "offset": 7
+                },
+                {
+                  "val": "Sharma",
+                  "offset": 21
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2398,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "Enter \"company\" as \"Sun\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "company",
+                  "offset": 7
+                },
+                {
+                  "val": "Sun",
+                  "offset": 20
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2363,
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "Enter \"address\" as \"Earth\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "address",
+                  "offset": 7
+                },
+                {
+                  "val": "Earth",
+                  "offset": 20
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2315,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "Enter \"city\" as \"Lucknow\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "city",
+                  "offset": 7
+                },
+                {
+                  "val": "Lucknow",
+                  "offset": 17
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2446,
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "Enter \"state\" as \"UP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "state",
+                  "offset": 7
+                },
+                {
+                  "val": "UP",
+                  "offset": 18
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2353,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Enter \"postcode\" as \"22453\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postcode",
+                  "offset": 7
+                },
+                {
+                  "val": "22453",
+                  "offset": 21
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2424,
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "Enter \"country\" as \"India\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "country",
+                  "offset": 7
+                },
+                {
+                  "val": "India",
+                  "offset": 20
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2286,
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "Enter \"mobile\" as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mobile",
+                  "offset": 7
+                },
+                {
+                  "val": "",
+                  "offset": 19
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13375,
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "Enter \"alias\" as \"US\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "alias",
+                  "offset": 7
+                },
+                {
+                  "val": "US",
+                  "offset": 18
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2288,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "Click Submit Button",
+            "match": {
+              "location": "RegisterRunner.clickSubmit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2305,
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "Verify if the error message is displayed",
+            "match": {
+              "location": "RegisterRunner.isErrorDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@multipleverify"
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "Register a new user to portal",
+        "description": "",
+        "id": "user-registration;register-a-new-user-to-portal;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 983216327,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Navigate to Homepage",
+            "match": {
+              "location": "RegisterRunner.navigateToHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@class\u003d\u0027login\u0027]\"}\n  (Session info: chrome\u003d98.0.4758.80)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027it002055\u0027, ip: \u0027192.168.18.9\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.10.0-1057-oem\u0027, java.version: \u00271.8.0_321\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.ChIsBT}, goog:chromeOptions: {debuggerAddress: localhost:39087}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 61c653f26cd2c961f843512ed6b19e60\n*** Element info: {Using\u003dxpath, value\u003d//a[@class\u003d\u0027login\u0027]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\n\tat com.assignment2.userreg.pageobjects.Homepage.clickLogin(Homepage.java:14)\n\tat com.assignment2.userreg.stepdefinations.RegisterRunner.loginbtn(RegisterRunner.java:42)\n\tat ✽.Click on Login(file:src/test/resources/FeatureFiles/RegisterUserVerifyError.feature:15)\n",
+              "duration": 25379008,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "Click on Login",
+            "match": {
+              "location": "RegisterRunner.loginbtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3378,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Enter email as \"b9n0t@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "b9n0t@gmail.com",
+                  "offset": 16
+                }
+              ],
+              "location": "RegisterRunner.enterEmail(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2579,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "Click on Submit Create",
+            "match": {
+              "location": "RegisterRunner.clickSubmitCreate()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2260,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "Select gender as \"female\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "female",
+                  "offset": 18
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2127,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "Enter \"customer_first_name\" as \"Rajesh\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "customer_first_name",
+                  "offset": 7
+                },
+                {
+                  "val": "Rajesh",
+                  "offset": 32
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2253,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "Enter \"customer_last_name\" as \"Raj\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "customer_last_name",
+                  "offset": 7
+                },
+                {
+                  "val": "Raj",
+                  "offset": 31
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2542,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "Enter \"password\" as \"ggyjb2n\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 7
+                },
+                {
+                  "val": "ggyjb2n",
+                  "offset": 21
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2210,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "Enter \"day\" as \"12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "day",
+                  "offset": 7
+                },
+                {
+                  "val": "12",
+                  "offset": 16
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2232,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "Enter \"month\" as \"March\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "month",
+                  "offset": 7
+                },
+                {
+                  "val": "March",
+                  "offset": 18
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2095,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "Enter \"year\" as \"2004\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "year",
+                  "offset": 7
+                },
+                {
+                  "val": "2004",
+                  "offset": 17
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6101,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "Enter \"firstname\" as \"Rajesh\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "firstname",
+                  "offset": 7
+                },
+                {
+                  "val": "Rajesh",
+                  "offset": 22
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2141,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "Enter \"lastname\" as \"Raj\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lastname",
+                  "offset": 7
+                },
+                {
+                  "val": "Raj",
+                  "offset": 21
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2167,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "Enter \"company\" as \"Moon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "company",
+                  "offset": 7
+                },
+                {
+                  "val": "Moon",
+                  "offset": 20
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2195,
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "Enter \"address\" as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "address",
+                  "offset": 7
+                },
+                {
+                  "val": "",
+                  "offset": 20
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2193,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "Enter \"city\" as \"Delhi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "city",
+                  "offset": 7
+                },
+                {
+                  "val": "Delhi",
+                  "offset": 17
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2235,
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "Enter \"state\" as \"Delhi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "state",
+                  "offset": 7
+                },
+                {
+                  "val": "Delhi",
+                  "offset": 18
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2151,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Enter \"postcode\" as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postcode",
+                  "offset": 7
+                },
+                {
+                  "val": "",
+                  "offset": 21
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2402,
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "Enter \"country\" as \"India\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "country",
+                  "offset": 7
+                },
+                {
+                  "val": "India",
+                  "offset": 20
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2188,
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "Enter \"mobile\" as \"8736473547\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mobile",
+                  "offset": 7
+                },
+                {
+                  "val": "8736473547",
+                  "offset": 19
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2189,
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "Enter \"alias\" as \"UK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "alias",
+                  "offset": 7
+                },
+                {
+                  "val": "UK",
+                  "offset": 18
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2173,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "Click Submit Button",
+            "match": {
+              "location": "RegisterRunner.clickSubmit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2103,
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "Verify if the error message is displayed",
+            "match": {
+              "location": "RegisterRunner.isErrorDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@multipleverify"
+          }
+        ]
+      },
+      {
+        "line": 42,
+        "name": "Register a new user to portal",
+        "description": "",
+        "id": "user-registration;register-a-new-user-to-portal;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1017232865,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Navigate to Homepage",
+            "match": {
+              "location": "RegisterRunner.navigateToHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@class\u003d\u0027login\u0027]\"}\n  (Session info: chrome\u003d98.0.4758.80)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027it002055\u0027, ip: \u0027192.168.18.9\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.10.0-1057-oem\u0027, java.version: \u00271.8.0_321\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.WWgtoI}, goog:chromeOptions: {debuggerAddress: localhost:41919}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a823ff2fd0d24b3c63cac2334686c069\n*** Element info: {Using\u003dxpath, value\u003d//a[@class\u003d\u0027login\u0027]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\n\tat com.assignment2.userreg.pageobjects.Homepage.clickLogin(Homepage.java:14)\n\tat com.assignment2.userreg.stepdefinations.RegisterRunner.loginbtn(RegisterRunner.java:42)\n\tat ✽.Click on Login(file:src/test/resources/FeatureFiles/RegisterUserVerifyError.feature:15)\n",
+              "duration": 26177473,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "Click on Login",
+            "match": {
+              "location": "RegisterRunner.loginbtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3480,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Enter email as \"b6n7b@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "b6n7b@gmail.com",
+                  "offset": 16
+                }
+              ],
+              "location": "RegisterRunner.enterEmail(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2390,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "Click on Submit Create",
+            "match": {
+              "location": "RegisterRunner.clickSubmitCreate()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2392,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "Select gender as \"male\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "male",
+                  "offset": 18
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2447,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "Enter \"customer_first_name\" as \"Dinesh\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "customer_first_name",
+                  "offset": 7
+                },
+                {
+                  "val": "Dinesh",
+                  "offset": 32
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2415,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "Enter \"customer_last_name\" as \"Trivedi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "customer_last_name",
+                  "offset": 7
+                },
+                {
+                  "val": "Trivedi",
+                  "offset": 31
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2394,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "Enter \"password\" as \"igysb2n\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 7
+                },
+                {
+                  "val": "igysb2n",
+                  "offset": 21
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2358,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "Enter \"day\" as \"18\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "day",
+                  "offset": 7
+                },
+                {
+                  "val": "18",
+                  "offset": 16
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2384,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "Enter \"month\" as \"June\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "month",
+                  "offset": 7
+                },
+                {
+                  "val": "June",
+                  "offset": 18
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2335,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "Enter \"year\" as \"1999\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "year",
+                  "offset": 7
+                },
+                {
+                  "val": "1999",
+                  "offset": 17
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2368,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "Enter \"firstname\" as \"Dinesh\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "firstname",
+                  "offset": 7
+                },
+                {
+                  "val": "Dinesh",
+                  "offset": 22
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2410,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "Enter \"lastname\" as \"Trivedi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lastname",
+                  "offset": 7
+                },
+                {
+                  "val": "Trivedi",
+                  "offset": 21
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3318,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "Enter \"company\" as \"Mars\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "company",
+                  "offset": 7
+                },
+                {
+                  "val": "Mars",
+                  "offset": 20
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2383,
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "Enter \"address\" as \"Samsung\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "address",
+                  "offset": 7
+                },
+                {
+                  "val": "Samsung",
+                  "offset": 20
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3350,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "Enter \"city\" as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "city",
+                  "offset": 7
+                },
+                {
+                  "val": "",
+                  "offset": 17
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2450,
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "Enter \"state\" as \"Nepal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "state",
+                  "offset": 7
+                },
+                {
+                  "val": "Nepal",
+                  "offset": 18
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2410,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Enter \"postcode\" as \"21453\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postcode",
+                  "offset": 7
+                },
+                {
+                  "val": "21453",
+                  "offset": 21
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2361,
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "Enter \"country\" as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "country",
+                  "offset": 7
+                },
+                {
+                  "val": "",
+                  "offset": 20
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2368,
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "Enter \"mobile\" as \"9746473547\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mobile",
+                  "offset": 7
+                },
+                {
+                  "val": "9746473547",
+                  "offset": 19
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2486,
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "Enter \"alias\" as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "alias",
+                  "offset": 7
+                },
+                {
+                  "val": "",
+                  "offset": 18
+                }
+              ],
+              "location": "RegisterRunner.selectGender(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2334,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "Click Submit Button",
+            "match": {
+              "location": "RegisterRunner.clickSubmit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2186,
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "Verify if the error message is displayed",
+            "match": {
+              "location": "RegisterRunner.isErrorDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@multipleverify"
+          }
+        ]
+      }
+    ],
+    "name": "User Registration",
+    "description": "",
+    "id": "user-registration",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/RegisterUserVerifyError.feature",
+    "tags": []
+  }
+]
